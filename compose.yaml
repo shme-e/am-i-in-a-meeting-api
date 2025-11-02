@@ -15,8 +15,6 @@ services:
       - "8000:8000"
     networks:
       - apps
-    env_file:
-      - .env
     restart: unless-stopped
     volumes:
       - am-i-in-a-meeting-api-data:/data
